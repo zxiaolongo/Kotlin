@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".specialFun.SpecialFunActivity">
+    <Button
+        android:onClick="btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="表达式自动推断类型"/>
+    <Button
+        android:onClick="btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="public必须有返回值"/>
+    <Button
+        android:onClick="btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="varage可变参数"/>
+</LinearLayout>
