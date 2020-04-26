@@ -7,6 +7,7 @@ import com.zxl.kotlin.specialFun.SpecialFunActivity
 import com.zxl.kotlin.架构设计模式1音乐播放器.SingleUI
 import com.zxl.kotlin.架构设计模式1音乐播放器.User
 import com.zxl.kotlin.架构设计模式1音乐播放器.UserType
+import com.zxl.kotlin.解构.test
 
 
 class MainActivity : BaseActivity() {
@@ -18,5 +19,8 @@ class MainActivity : BaseActivity() {
     fun goSpecialFun(view: View){
         val user = User(1,"刘德华",UserType.VIP("大大标题","显示内容"))
         SingleUI.getInstance().showUi(user)
+
+        var mUser = com.zxl.kotlin.解构.User("解构",12)
+        test()
     }
 }
