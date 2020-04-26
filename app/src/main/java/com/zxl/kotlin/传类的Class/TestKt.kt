@@ -7,7 +7,7 @@ class TestKt{
         jav.test(ClassJava::class.java)
     }
     //k-kotlin
-    fun test2(){
+    fun test23(){
         var kt = ClassKt()
         kt.testKt(ClassKt::class.java)
     }
