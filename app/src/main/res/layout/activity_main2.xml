@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Main2Activity">
     <TextView
         android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-       />
+        android:text="hello"/>
     <Button
-        android:onClick="goSpecialFun"
+        android:onClick="btn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="特殊函数"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

@@ -1,6 +1,6 @@
 package com.zxl.kotlin.hello
 
-class Greeter(val name: String) {
+class Greeter(var name: String) {
     fun greet() {
         println("Hello, $name")
     }

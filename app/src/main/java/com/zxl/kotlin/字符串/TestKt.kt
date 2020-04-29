@@ -18,9 +18,10 @@ class TestKt {
         println("$s")
     }
 
+    //?.   ?:
     fun print(){
         var  sk= StringKt()
-        var len = sk.a?.length?:0  //notice ?可不做处理返回值为 null 或 配合?:做空判断处理
+        var len = sk.a?.length?:0  //notice ?.可不做处理返回值为 null 或 配合?:做空判断处理
         println("${sk.a}")
     }
 

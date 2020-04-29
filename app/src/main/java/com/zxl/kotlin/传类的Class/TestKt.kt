@@ -7,8 +7,9 @@ class TestKt{
         jav.test(ClassJava::class.java)
     }
     //k-kotlin
-    fun test23(){
+    fun test2(){
         var kt = ClassKt()
-        kt.testKt(ClassKt::class.java)
+        kt.testKt(ClassKt::class.java) //::代表声明
+                                        //  runnable::run   方法的声明但不执行
     }
 }

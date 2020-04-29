@@ -27,6 +27,15 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    packagingOptions {
+        exclude 'META-INF/proguard/coroutines.pro'
+    }
+}
+
+kotlin {
+    experimental {
+        coroutines 'enable'
+    }
 }
 
 dependencies {
@@ -40,5 +49,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
 
-}
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.1"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.1"
 
+}

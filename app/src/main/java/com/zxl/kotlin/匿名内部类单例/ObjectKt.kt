@@ -2,6 +2,7 @@ package com.zxl.kotlin.匿名内部类单例
 //object  kotlin表现静态对象     java-中表现为单例模式
 object ObjectKt {
     var a:String?=""
+    @JvmStatic  //兼容Java
     fun test(){}
 }
 

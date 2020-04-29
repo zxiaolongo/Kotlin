@@ -6,4 +6,5 @@ class TestKt {
         var jav = ConflictJava()
         jav.`in`  //反引号解决关键字冲突
     }
+    //反斜杠的作用 还可以使非法变成合法   class `123`{}  只有kotlin可调用Java不能
 }

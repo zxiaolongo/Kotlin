@@ -4,7 +4,16 @@ package com.zxl.kotlin.集合操作符
 //如果开发者需要使用TreeSet， LinkedList集合实现类依然可以使用java集合框架提供的类。
 class ListUtils {
     fun test(){
-
+        var list = listOf<String>("1","2")
+        println(list.toString())//[1,2]
+        var maplist = list.map {
+            it+it
+        }
+        println(maplist.toString())//[11,22]
+        var filterlist = list.filter {
+            it.contains("1")
+        }
+        println(filterlist.toString())//[1]
     }
     var list = arrayListOf<String>("1","2")
     var a = list.map {
@@ -18,5 +27,8 @@ class ListUtils {
 //        最终结果
     }
 
-   //reduce 表示合并两个 参数
+
+
+
+    //reduce 表示合并两个 参数
 }

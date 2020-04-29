@@ -4,7 +4,7 @@ package com.zxl.kotlin.静态伴生对象jvmStatic注解
 class CompaionKt {
     //相当java静态内部类
     companion object {
-        //object 不起名字默认-Compaion
+        //object 不起名字默认-Compaion  可直接调用，也可CompaionKt.Companion.a
 //        @JvmStatic notice 加静态注解java也可以直接调用
         var a: String? = null
         //        @JvmStatic

@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".specialFun.SpecialFunActivity"></activity>
+        <activity android:name=".specialFun.SpecialFunActivity" />
+        <activity android:name=".Main2Activity"></activity>
     </application>
 
 </manifest>
