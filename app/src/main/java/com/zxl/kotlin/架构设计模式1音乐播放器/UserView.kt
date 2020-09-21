@@ -1,5 +1,6 @@
 package com.zxl.kotlin.架构设计模式1音乐播放器
 
+import android.util.Log
 import android.widget.Toast
 
 interface  UiView {
@@ -21,7 +22,8 @@ class GreenUiView:UiView{
 
 class BlueUiView:UiView{
     override fun showView() {
-        println("蓝色")
+        Log.i("-------"," showView")
+//        println("蓝色")
     }
 
     override fun getUiButton() {

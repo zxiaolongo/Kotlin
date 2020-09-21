@@ -14,7 +14,7 @@ class SpecialFunActivity : BaseActivity() {
     }
     fun btn1(view: View){
         var s:String;
-       if (sum(1,1) is Int){
+       if (sum(1,1) is Int){ //智能转换  --true后自动转换为Int
            s = "Int"
        }else{
            s = "not Int"

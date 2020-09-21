@@ -1,7 +1,7 @@
 package com.zxl.kotlin.字符串
 
 import android.util.Log
-
+//  $变量   ${StringKt.a}
 class StringKt {
     var a :String?= "hello"
     var b :String= "hello"

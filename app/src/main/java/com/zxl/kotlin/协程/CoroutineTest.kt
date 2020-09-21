@@ -3,6 +3,7 @@ package com.zxl.kotlin.协程
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 /**
  * 1 协程是依附于线程的，当线程都退出了，协程也不会执行了

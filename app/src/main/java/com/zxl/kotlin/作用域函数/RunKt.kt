@@ -24,9 +24,6 @@ data class Person2 (
 fun main2(args: Array<String>) {
     var person: Person? = null
     // T?.run当T为null时不调用run函数
-    person?.run {
-        println("person?.run:person=$person")
-    }
     person = Person("小明",25)
     val returnValue = person.run {
         println("person.run:this=$this")

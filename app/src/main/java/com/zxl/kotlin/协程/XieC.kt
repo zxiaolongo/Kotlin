@@ -9,7 +9,7 @@ import kotlinx.coroutines.*
 
 
 /**
- * 1 runBlocking {}是创建一个新的协程同时阻塞当前线程，直到协程结束。
+ * 1 runBlocking 。{}是创建一个新的协程同时阻塞当前线程，直到协程结束
  * 2 GlobalScope.launch 返回job,可以进行cancel cancle之后协程不再执行
  * 3 (async/await:Deferred)  async异步的协程任务->Deffered，Deffered.await得到协程结束时返回的结果
  * */
