@@ -1,0 +1,49 @@
+5.1 顺序执行
+//用协程改造回调代码
+GlobalScope.launch(Dispatchers.Main) {
+    //三次请求顺序执行
+    val value1 = request1(parameter)
+    val value2 = request2(value1)
+    val value3 = request2(value2)
+    //用最终结果更新UI
+    updateUI(value3)
+}
+
+//requestAPI适配了Kotlin协程
+suspend fun request1(parameter : Parameter){...}
+suspend fun request2(parameter : Parameter){...}
+suspend fun request3(parameter : Parameter){...}
+
+5.2 并发执行
+//并发请求
+GlobalScope.launch(Dispatchers.Main) {
+    //三次请求并发进行
+    val value1 = async { request1(parameter1) }
+    val value2 = async { request2(parameter2) }
+    val value3 = async { request3(parameter3) }
+    //所有结果全部返回后更新UI
+    updateUI(value1.await(), value2.await(), value3.await())
+}
+
+//requestAPI适配了Kotlin协程
+suspend fun request1(parameter : Parameter){...}
+suspend fun request2(parameter : Parameter){...}
+suspend fun request3(parameter : Parameter){...}
+
+
+5.3 复杂业务逻辑
+//复杂业务逻辑的Kotlin协程实现
+GlobalScope.launch(Dispatchers.Main) {
+    //首先拿到request1的请求结果
+    val value1 = request1(parameter1)
+    //将request1的请求结果用于request2和request3两个请求的并发进行
+    val value2 = async { request2(value1) }
+    val value3 = async { request2(value1) }
+    //用request2和request3两个请求结果更新UI
+    updateUI(value2.await(), value3.await())
+}
+
+//requestAPI适配了Kotlin协程
+suspend fun request1(parameter : Parameter){...}
+suspend fun request2(parameter : Parameter){...}
+suspend fun request3(parameter : Parameter){...}
